@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra Textbooks Offline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>MAHARASHTRA STATE BOARD BOOKS SOLUTIONS.</h1>
+        <p>OFFLINE ACCESS TO CLASS 8 TO CLASS 12 TEXTBOOKS AND SOLUTIONS</p>
+    </header>
+
+    <div class="container">
+        <div class="offline-status">
+            <span id="status-indicator"></span>
+            <span id="status-text">Checking connection...</span>
+        </div>
+
+        <div class="class-selector">
+            <label for="class-select">Select Class:</label>
+            <select id="class-select">
+                <option value="">-- Select Class --</option>
+                <option value="8">Class 8</option>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+                <option value="11">Class 11</option>
+                <option value="12">Class 12</option>
+            </select>
+        </div>
+
+        <div class="subject-list" id="subject-list">
+            <!-- Subjects will be loaded here dynamically -->
+            <p class="placeholder">Please select a class to view available textbooks and solutions</p>
+        </div>
+
+        <div class="pdf-viewer" id="pdf-viewer">
+            <div class="pdf-header">
+                <h2 id="pdf-title">PDF Viewer</h2>
+                <button id="close-pdf">Close</button>
+            </div>
+            <iframe id="pdf-frame" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>This is an offline application. Content will be available without internet connection after first visit.</p>
+        <p>“An investment in knowledge pays the best interest” – BENJAMIN FRANKLIN</p>
+        <p>“Live as if you were to die tomorrow. Learn as if you were to live forever” – MAHATMA GANDHI</p>
+        <p>“Education is the most powerful weapon which you can use to change the world” – NELSON MANDELA</p>
+        <p>". . . Life is a series of fights and disillusionments. . . . The secret of life is not enjoyment, but education through experience" - SWAMI VIVEKANANDA</p>
+        <p>© 2025 MAHARASHTRA STATE BOARD SECONDARY AND HIGHER SECONDARY EDUCATION.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
